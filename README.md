@@ -6,5 +6,13 @@ If you wanna do something similar for your system, just make sure the downloads 
 ```
 DIRETORIO_DOWNLOADS="$HOME/Downloads/"
 ```
+For running it you also need to give the script the permissions to run:
+```
+chmod u+x script.sh
+```
+To run the script just enter the folder where it is and type on the terminal:
+```
+sudo ./script.sh
+```
 I use nala instead of standard apt because is significantly faster and also cleaner to visualize in the terminal.
 
