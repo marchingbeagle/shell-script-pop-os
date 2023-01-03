@@ -30,6 +30,7 @@ sudo nala install gnome-tweaks -y;
 sudo nala install ufw -y;
 sudo nala install gufw -y;
 sudo nala install gparted -y;
+sudo nala install gimp -y;
 
 # Download and install chrome deb
 wget -c "$URL_GOOGLE_CHROME"       -P "$DIRETORIO_DOWNLOADS"
