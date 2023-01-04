@@ -9,6 +9,9 @@ sudo apt install nala -y
 sudo nala update -y
 sudo nala upgrade -y
 
+# restricted extras added
+sudo nala install ubuntu-restricted-extras -y;
+
 # flatpak installs
 sudo nala install flatpak -y;
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -32,6 +35,7 @@ sudo nala install ufw -y;
 sudo nala install gufw -y;
 sudo nala install gparted -y;
 sudo nala install gimp -y;
+sudo nala install synaptic -y;
 
 # ufw configuration
 sudo ufw limit 22/tcp
