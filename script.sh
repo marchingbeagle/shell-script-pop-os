@@ -62,15 +62,16 @@ cd;
 #-------------------------------------------#
 
 # ufw configuration
-sudo ufw limit 22/tcp
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw enable
+sudo ufw limit 22/tcp;
+sudo ufw allow 80/tcp;
+sudo ufw allow 443/tcp;
+sudo ufw default deny incoming;
+sudo ufw default allow outgoing;
+sudo ufw enable;
 
 #git config
-git config credential.helper store
+git config credential.helper store;
+
 
 # Download and install chrome deb
 wget -c "$URL_GOOGLE_CHROME"       -P "$DIRETORIO_DOWNLOADS"
