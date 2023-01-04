@@ -39,6 +39,16 @@ sudo nala install synaptic -y;
 sudo nala install curl -y;
 sudo nala install zsh -y;
 
+# zsh configuration
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y;
+
+# omni theme instalation
+git clone https://github.com/getomni/gnome-terminal.git;
+sudo nala install dconf-cli -y;
+cd gnome-terminal;
+sudo ./install.sh;
+cd;
+
 # ufw configuration
 sudo ufw limit 22/tcp
 sudo ufw allow 80/tcp
