@@ -41,6 +41,9 @@ sudo nala install zsh -y;
 
 # zsh configuration
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y;
+# theme used [daveverwer], just do
+# cd ~ ; sudo nano .zshrc
+
 
 # omni theme instalation
 git clone https://github.com/getomni/gnome-terminal.git;
