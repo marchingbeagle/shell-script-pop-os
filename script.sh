@@ -5,9 +5,9 @@ DIRETORIO_DOWNLOADS="$HOME/Downloads/"
 URL_GOOGLE_CHROME="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 
 # nala install and update for the system
-sudo apt install nala -y
-sudo nala update -y
-sudo nala upgrade -y
+sudo apt install nala -y;
+sudo nala update -y;
+sudo nala upgrade -y;
 
 # restricted extras added
 sudo nala install ubuntu-restricted-extras -y;
