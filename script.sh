@@ -71,7 +71,8 @@ sudo ufw enable;
 
 #git config
 git config credential.helper store;
-
+git config --global user.name "marchingbeagle"
+git config --global user.email "erik.schneider.pacheco@gmail.com"
 
 # Download and install chrome deb
 wget -c "$URL_GOOGLE_CHROME"       -P "$DIRETORIO_DOWNLOADS"
