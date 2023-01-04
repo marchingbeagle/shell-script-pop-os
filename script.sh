@@ -36,6 +36,8 @@ sudo nala install gufw -y;
 sudo nala install gparted -y;
 sudo nala install gimp -y;
 sudo nala install synaptic -y;
+sudo nala install curl -y;
+sudo nala install zsh -y;
 
 # ufw configuration
 sudo ufw limit 22/tcp
