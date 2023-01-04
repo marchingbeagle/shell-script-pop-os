@@ -46,9 +46,13 @@ chsh -s $(which zsh) #set zsh for default
 # theme used [daveverwer], just do
 # cd ~ ; sudo nano .zshrc
 
-#zinit install
+#zinit
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)" -y;
-zinit self-update
+cd;
+sudo echo "zinit light zdharma/fast-syntax-highlighting 
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions" >> .zshrc
+
 
 # omni theme instalation
 git clone https://github.com/getomni/gnome-terminal.git;
