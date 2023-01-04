@@ -39,12 +39,16 @@ sudo nala install synaptic -y;
 sudo nala install curl -y;
 sudo nala install zsh -y;
 
+#--------------shell configuration-----------#
 # zsh configuration
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y;
 chsh -s $(which zsh) #set zsh for default
 # theme used [daveverwer], just do
 # cd ~ ; sudo nano .zshrc
 
+#zinit install
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)" -y;
+zinit self-update
 
 # omni theme instalation
 git clone https://github.com/getomni/gnome-terminal.git;
@@ -52,6 +56,8 @@ sudo nala install dconf-cli -y;
 cd gnome-terminal;
 sudo ./install.sh;
 cd;
+
+#-------------------------------------------#
 
 # ufw configuration
 sudo ufw limit 22/tcp
