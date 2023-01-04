@@ -51,7 +51,7 @@ bash -c "$(curl --fail --show-error --silent --location https://raw.githubuserco
 cd;
 sudo echo "zinit light zdharma/fast-syntax-highlighting 
 zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-completions" >> .zshrc
+zinit light zsh-users/zsh-completions" >> .zshrc;
 
 # omni theme instalation
 git clone https://github.com/getomni/gnome-terminal.git;
