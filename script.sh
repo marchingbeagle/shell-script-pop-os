@@ -19,6 +19,7 @@ flatpak install flathub cc.arduino.IDE2 -y;
 flatpak install flathub com.valvesoftware.Steam -y;
 flatpak install flathub com.visualstudio.code -y;
 flatpak install flathub net.lutris.Lutris -y;
+flatpak install flathub org.videolan.VLC -y;
 flatpak update -y;
 
 # snap installs
