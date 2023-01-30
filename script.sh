@@ -10,6 +10,7 @@ sudo nala update -y;
 sudo nala upgrade -y;
 
 # restricted extras added
+sudo nala install libu2f-udev -y;
 sudo nala install ubuntu-restricted-extras -y;
 
 # flatpak installs
@@ -41,24 +42,24 @@ sudo nala install zsh -y;
 
 #--------------shell configuration-----------#
 # zsh configuration
-#sh -c -n "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y;
-#chsh -s $(which zsh) #set zsh for default
+# sh -c -n "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y;
+# chsh -s $(which zsh) #set zsh for default
 # theme used [daveverwer], just do
 # cd ~ ; sudo nano .zshrc
 
 #zinit
-#bash -c -y "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)" -y;
-#cd;
-#sudo echo "zinit light zdharma/fast-syntax-highlighting 
-#zinit light zsh-users/zsh-autosuggestions
-#zinit light zsh-users/zsh-completions" >> .zshrc;
+# sh -c -y "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)" -y;
+# cd;
+# sudo echo "zinit light zdharma/fast-syntax-highlighting 
+# zinit light zsh-users/zsh-autosuggestions
+# zinit light zsh-users/zsh-completions" >> .zshrc;
 
 # omni theme instalation
-git clone https://github.com/getomni/gnome-terminal.git;
-sudo nala install dconf-cli -y;
-cd gnome-terminal;
-sudo ./install.sh;
-cd;
+# git clone https://github.com/getomni/gnome-terminal.git;
+# sudo nala install dconf-cli -y;
+# cd gnome-terminal;
+# sudo ./install.sh;
+# cd;
 #-------------------------------------------#
 
 # ufw configuration
