@@ -25,10 +25,6 @@ flatpak install flathub net.lutris.Lutris -y --user;
 flatpak install flathub org.videolan.VLC -y --user;
 flatpak update -y;
 
-# snap installs
-sudo nala install snapd -y;
-sudo snap install notion-snap -y;
-
 # standard nala installs
 sudo nala install code -y;
 sudo nala install gnome-tweaks -y;
@@ -46,13 +42,6 @@ sudo nala install zsh -y;
 # chsh -s $(which zsh) #set zsh for default
 # theme used [daveverwer], just do
 # cd ~ ; sudo nano .zshrc
-
-#zinit
-# sh -c -y "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)" -y;
-# cd;
-# sudo echo "zinit light zdharma/fast-syntax-highlighting 
-# zinit light zsh-users/zsh-autosuggestions
-# zinit light zsh-users/zsh-completions" >> .zshrc;
 
 # omni theme instalation
 # git clone https://github.com/getomni/gnome-terminal.git;
