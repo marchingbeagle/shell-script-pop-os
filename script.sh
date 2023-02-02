@@ -35,21 +35,21 @@ sudo nala install gimp -y;
 sudo nala install synaptic -y;
 sudo nala install curl -y;
 sudo nala install zsh -y;
+sudo nala install dconf-cli -y;
 
-#--------------shell configuration-----------#
 # zsh configuration
+
 # sh -c -n "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y;
 # chsh -s $(which zsh) #set zsh for default
 # theme used [daveverwer], just do
 # cd ~ ; sudo nano .zshrc
 
 # omni theme instalation
-# git clone https://github.com/getomni/gnome-terminal.git;
-# sudo nala install dconf-cli -y;
-# cd gnome-terminal;
+
+git clone https://github.com/getomni/gnome-terminal.git;
+# then you have to manually enter the folder downloaded and run the folowing command
 # sudo ./install.sh;
-# cd;
-#-------------------------------------------#
+
 
 # ufw configuration
 sudo ufw limit 22/tcp;
@@ -60,6 +60,7 @@ sudo ufw default allow outgoing;
 sudo ufw enable;
 
 #git config
+#use your own information here
 git config credential.helper store;
 git config --global user.name "marchingbeagle"
 git config --global user.email "erik.schneider.pacheco@gmail.com"
