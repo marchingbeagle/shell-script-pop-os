@@ -37,20 +37,6 @@ sudo nala install curl -y;
 sudo nala install zsh -y;
 sudo nala install dconf-cli -y;
 
-# zsh configuration
-
-# sh -c -n "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y;
-# chsh -s $(which zsh) #set zsh for default
-# theme used [daveverwer], just do
-# cd ~ ; sudo nano .zshrc
-
-# omni theme instalation
-
-git clone https://github.com/getomni/gnome-terminal.git;
-# then you have to manually enter the folder downloaded and run the folowing command
-# sudo ./install.sh;
-
-
 # ufw configuration
 sudo ufw limit 22/tcp;
 sudo ufw allow 80/tcp;
