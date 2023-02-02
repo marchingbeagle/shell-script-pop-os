@@ -10,3 +10,22 @@ To run the script just enter the folder where it is and type on the terminal:
 ```
 sudo ./script.sh
 ```
+# zsh configs
+```
+sh -c -n "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y;
+chsh -s $(which zsh) #set zsh for default
+```
+Theme i use is [daveverwer],  to change your theme just run
+```
+cd ~ ; sudo nano .zshrc
+```
+Inside .zshrc file you can change the theme to your desired theme
+
+# Omni theme instalation
+```
+git clone https://github.com/getomni/gnome-terminal.git;
+```
+Then you have to manually enter the folder downloaded and run the folowing command
+```
+sudo ./install.sh;
+```
