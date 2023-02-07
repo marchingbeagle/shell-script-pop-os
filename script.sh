@@ -16,7 +16,6 @@ sudo nala install ubuntu-restricted-extras -y;
 # flatpak installs
 sudo nala install flatpak -y;
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub com.discordapp.Discord -y --user;
 flatpak install flathub com.spotify.Client -y --system;
 flatpak install flathub com.bitwarden.desktop -y --user;
 flatpak install flathub cc.arduino.IDE2 -y --user;
@@ -36,6 +35,10 @@ sudo nala install synaptic -y;
 sudo nala install curl -y;
 sudo nala install zsh -y;
 sudo nala install dconf-cli -y;
+
+#discord install
+wget https://dl.discordapp.net/apps/linux/0.0.22/discord-0.0.22.deb;
+sudo nala install ./discord-0.0.22.deb -y;
 
 #node js install
 sudo nala install nodejs -y;
