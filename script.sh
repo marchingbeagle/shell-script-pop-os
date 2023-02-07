@@ -37,6 +37,14 @@ sudo nala install curl -y;
 sudo nala install zsh -y;
 sudo nala install dconf-cli -y;
 
+#node js install
+sudo nala install nodejs -y;
+sudo nala install npm -y;
+sudo npm cache clean -f;
+sudo npm install -g n;
+sudo n stable;
+hash -r
+
 # ufw configuration
 sudo ufw limit 22/tcp;
 sudo ufw allow 80/tcp;
