@@ -20,12 +20,12 @@ flatpak install flathub com.discordapp.Discord -y --user;
 flatpak install flathub com.spotify.Client -y --system;
 flatpak install flathub com.bitwarden.desktop -y --user;
 flatpak install flathub cc.arduino.IDE2 -y --user;
-flatpak install flathub com.valvesoftware.Steam -y --user;
 flatpak install flathub net.lutris.Lutris -y --user;
 flatpak install flathub org.videolan.VLC -y --user;
 flatpak update -y;
 
 # standard nala installs
+sudo nala install steam -y;
 sudo nala install code -y;
 sudo nala install gnome-tweaks -y;
 sudo nala install ufw -y;
