@@ -1,13 +1,16 @@
 #!/bin/bash
 
-# variables
-DIRETORIO_DOWNLOADS="$HOME/Downloads/"
-URL_GOOGLE_CHROME="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
-
 # nala install and update for the system
 sudo apt install nala -y;
 sudo nala update -y;
 sudo nala upgrade -y;
+
+# uninstalling some apps
+sudo apt-get remove --purge libreoffice*;
+sudo snap remove --purge firefox -y;
+sudo snap remove firefox -y;
+sudo apt-get clean;
+sudo apt-get autoremove;
 
 # restricted extras added
 sudo nala install libu2f-udev -y;
@@ -17,10 +20,18 @@ sudo nala install ubuntu-restricted-extras -y;
 sudo nala install flatpak -y;
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.spotify.Client -y --system;
-flatpak install flathub com.bitwarden.desktop -y --user;
-flatpak install flathub cc.arduino.IDE2 -y --user;
-flatpak install flathub net.lutris.Lutris -y --user;
-flatpak install flathub org.videolan.VLC -y --user;
+flatpak install flathub com.bitwarden.desktop -y --system;
+flatpak install flathub org.gimp.GIMP -y --system;
+flatpak install flathub com.ktechpit.colorwall -y --system;
+flatpak install flathub org.qbittorrent.qBittorrent -y --system;
+flatpak install flathub org.mozilla.firefox -y --system;
+flatpak install flathub com.discordapp.Discord -y --system;
+flatpak install flathub org.onlyoffice.desktopeditors -y --system;
+flatpak install flathub org.audacityteam.Audacity -y --system;
+flatpak install flathub com.obsproject.Studio -y --system;
+flatpak install flathub com.mattjakeman.ExtensionManager -y --system;
+flatpak install flathub com.github.muriloventuroso.easyssh -y --system;
+flatpak install flathub org.videolan.VLC -y --system;
 flatpak update -y;
 
 # standard nala installs
@@ -30,7 +41,6 @@ sudo nala install gnome-tweaks -y;
 sudo nala install ufw -y;
 sudo nala install gufw -y;
 sudo nala install gparted -y;
-sudo nala install gimp -y;
 sudo nala install synaptic -y;
 sudo nala install curl -y;
 sudo nala install zsh -y;
@@ -66,6 +76,3 @@ git config credential.helper store;
 git config --global user.name "marchingbeagle"
 git config --global user.email "erik.schneider.pacheco@gmail.com"
 
-# Download and install chrome deb
-wget -c "$URL_GOOGLE_CHROME"       -P "$DIRETORIO_DOWNLOADS"
-sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
