@@ -48,6 +48,11 @@ sudo nala install curl -y;
 sudo nala install zsh -y;
 sudo nala install dconf-cli -y;
 
+#teams install
+curl -1sLf 'https://dl.cloudsmith.io/public/teams-for-linux/packages/setup.deb.sh' | sudo -E bash
+sudo nala update
+sudo nala install teams-for-linux
+
 #discord install
 wget https://dl.discordapp.net/apps/linux/0.0.22/discord-0.0.22.deb;
 sudo nala install ./discord-0.0.22.deb -y;
