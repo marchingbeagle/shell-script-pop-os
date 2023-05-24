@@ -24,7 +24,6 @@ flatpak install flathub com.bitwarden.desktop -y --system;
 flatpak install flathub org.gimp.GIMP -y --system;
 flatpak install flathub com.ktechpit.colorwall -y --system;
 flatpak install flathub org.qbittorrent.qBittorrent -y --system;
-flatpak install flathub org.mozilla.firefox -y --system;
 flatpak install flathub com.discordapp.Discord -y --system;
 flatpak install flathub org.onlyoffice.desktopeditors -y --system;
 flatpak install flathub org.audacityteam.Audacity -y --system;
@@ -35,6 +34,7 @@ flatpak install flathub org.videolan.VLC -y --system;
 flatpak update -y;
 
 # standard nala installs
+sudo nala install firefox -y;
 sudo nala install steam -y;
 sudo nala install code -y;
 sudo nala install gnome-tweaks -y;
