@@ -31,6 +31,7 @@ flatpak install flathub com.obsproject.Studio -y --system;
 flatpak install flathub com.mattjakeman.ExtensionManager -y --system;
 flatpak install flathub com.github.muriloventuroso.easyssh -y --system;
 flatpak install flathub org.videolan.VLC -y --system;
+flatpak install flathub com.system76.Popsicle -y --system;
 flatpak update -y;
 
 # standard nala installs
