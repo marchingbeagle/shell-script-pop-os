@@ -35,6 +35,7 @@ flatpak install flathub com.system76.Popsicle -y --system;
 flatpak update -y;
 
 # standard nala installs
+sudo nala install pavucontrol -y;
 sudo nala install firefox -y;
 sudo nala install steam -y;
 sudo nala install code -y;
